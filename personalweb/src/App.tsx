@@ -26,7 +26,7 @@ class App extends React.Component<IAppProps,IAppState>{
             </Navbar>
             <Switch>
               <Route path="/"component={Home}/>
-              <Route path="/portfolio"component={Port}/>
+              <Route path="/portfolio"component={Portfolio}/>
               <Route path="Resume"component={Resume}/>
             </Switch>
           </ConnectedRouter>  
