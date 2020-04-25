@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import {} from 'reactstrap';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+interface IAppProps{
+
 }
 
+interface IAppState{
+    name:string
+}
+
+
+class App extends React.Component<IAppProps,IAppState>{
+
+  render(){
+      return (
+        <Provider>
+          <ConnectedRouter histroy={history}>
+            <Navbar>
+              <Link to="/">About me</Link>
+              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/Resume">Resume</Link>
+            </Navbar>
+            <Switch>
+              <Route path="/"component={Home}/>
+              <Route path="/portfolio"component={Port}/>
+              <Route path="Resume"component={Resume}/>
+            </Switch>
+          </ConnectedRouter>  
+        </Provider>
+      );
+  }
+}
 export default App;
