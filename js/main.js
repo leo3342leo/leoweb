@@ -1,22 +1,4 @@
-/* -----------------------------------------------
-					Js Main
---------------------------------------------------
 
-Table of Content
-
-	1. Preloader
-	2. Isotope Portfolio Setup
-	3. Blogs Masonry Setup
-	4. Active Current Link
-	5. Mobile Toggle Click Setup
-	6. Testimonials OwlCarousel
-	7. Chart Setup
-	8. Portfolio Tilt Setup
-	9. Portfolio Image Link
-	10. Portfolio Video Link
-	11. Validate Contact Form
-
------------------------------------ */
 
 $(window).on('load', function () {
 
